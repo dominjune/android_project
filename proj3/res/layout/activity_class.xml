@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/class_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:entries="@array/year" />
+
+        <Spinner
+            android:id="@+id/class_term"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/term" />
+
+        <Button
+            android:id="@+id/class_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_selector"
+            android:textColor="#FFFFFF"
+            android:text="@string/class_look" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_timetable"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:background="@drawable/button_shape3">
+            
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/space"
+                android:visibility="invisible" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/week1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/week2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/week3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/week4" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/week5" />
+        </LinearLayout>
+		
+         <RelativeLayout
+                android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+                >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/class_background"
+            android:layout_gravity="center" >
+			
+           
+                
+	            <GridLayout
+	                android:id="@+id/class_grid"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:columnCount="6"
+	                android:orientation="horizontal"
+	                android:rowCount="15" >
+	
+	            </GridLayout>
+	            
+	            
+            
+        </ScrollView>
+        		<Button
+					android:id="@+id/share"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentRight="true"
+					android:layout_margin="5dp"
+					android:layout_marginBottom="10dp"
+					android:background="@drawable/login_button_selector2"
+					android:text="分享"
+					android:textSize="15sp"
+					android:textStyle="italic"
+					android:textColor="#ffffff"
+              		/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

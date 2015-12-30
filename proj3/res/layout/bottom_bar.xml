@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottombar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/shape1"
+    android:gravity="center_horizontal"
+    android:padding="0.3dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib1"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bar_hui1"
+            android:contentDescription="@string/des" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib2"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bar_hui2"
+            android:contentDescription="@string/des" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib3"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bar_hui3"
+            android:contentDescription="@string/des" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib4"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bar_hui4"
+            android:contentDescription="@string/des" />
+    </LinearLayout>
+
+</LinearLayout>
